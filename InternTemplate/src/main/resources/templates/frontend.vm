@@ -1,0 +1,30 @@
+$webResourceManager.requireResources("com.veniture.internDemo:general-resources")
+#disable_html_escaping()
+
+<!--
+Copyright (c) 2019 by venITure
+
+Released under the MIT license: http://jsbin.mit-license.org
+-->
+<html>
+<head>
+    <!-- Latest compiled and minified CSS-->
+    <!---->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <meta charset="utf-8">
+    <title>Title</title>
+    <meta name="decorator" content="atl.general">
+    <style id="css">
+    </style>
+
+    <script>
+        AJS.$(document).ready(function () {
+            ## AJS.$('#auiTable > tr')
+        });
+    </script>
+</head>
+<body>
+<ul>$projects</ul>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<atlassian-plugin key="${atlassian.plugin.key}" name="${project.name}" plugins-version="2">
+    <plugin-info>
+        <description>${project.description}</description>
+        <version>${project.version}</version>
+        <vendor name="${project.organization.name}" url="${project.organization.url}"/>
+        <param name="plugin-icon">images/pluginIcon.png</param>
+        <param name="plugin-logo">images/pluginLogo.png</param>
+    </plugin-info>
+    <web-resource key="general-resources" name="General Resources">
+        <dependency>com.atlassian.auiplugin:ajs</dependency>
+        <resource type="download" name="changeButtonName.js" location="/js/changeButtonName.js"/>
+        <context>atl.general</context>
+    </web-resource>
+
+    <servlet name="Sample Servlet" key="key" class="com.veniture.servlet.servlet">
+        <description>sample servlet</description>
+        <!-- We can change this name and its description to whatever we want. -->
+        <!-- To open the page, go to /plugins/servlet/servletname -->
+        <url-pattern>/servletname</url-pattern>
+    </servlet>
+
+    <rest name="Rest Service" key="rest" path="restservice" version="1.0">
+        <description key="restservice">
+            The rest service, the descriptions and the path can be changed in atlassian-plugin.xml file
+        </description>
+    </rest>
+</atlassian-plugin>
